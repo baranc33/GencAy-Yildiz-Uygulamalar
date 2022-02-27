@@ -1,4 +1,5 @@
-﻿using Empty.Models;
+﻿using Empty.Dto;
+using Empty.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Empty.Controllers
@@ -14,8 +15,10 @@ namespace Empty.Controllers
 
 
         [HttpGet]
-        public IActionResult CreateProduct()
+        public IActionResult CreateProduct(MyRoute route)
         {
+            int id = route.Id;
+
             return View();
         }
 
@@ -23,6 +26,16 @@ namespace Empty.Controllers
         [HttpPost]
         public IActionResult CreateProduct(Product entity)
         {
+            return View();
+        }
+
+
+        [HttpPost]
+        public IActionResult GetValue(IFormCollection entity)
+        {
+
+
+            string value1 = entity["name"].ToString();
             return View();
         }
 
