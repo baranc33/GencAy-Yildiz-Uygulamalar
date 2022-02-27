@@ -1,0 +1,13 @@
+﻿<script src="https://code.jquery.com/jquery-3.6.0.min.js">
+</script>
+
+
+<button id="btnGonder">Gönder</button>
+
+<script>
+    $("btnGonder").click(()=>{// bu idye sahip nesne click olduğunda
+        $.post("https://localhost:7134/product/verial",//burdaki post yöntemi ile gönderilecek link
+    {a:"a data",b:"b data"}// buda gidecek data
+    );
+    });
+</script>

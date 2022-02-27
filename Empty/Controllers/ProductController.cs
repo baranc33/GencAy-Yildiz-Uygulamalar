@@ -15,16 +15,22 @@ namespace Empty.Controllers
 
 
         [HttpGet]
-        public IActionResult CreateProduct(MyRoute route)
+        public IActionResult CreateProduct( )
         {
-            int id = route.Id;
-
+            var Header = Request.Headers.ToList();
             return View();
         }
 
 
         [HttpPost]
         public IActionResult CreateProduct(Product entity)
+        {
+            return View();
+        }
+        
+
+        [HttpPost]
+        public IActionResult VeriAl( )
         {
             return View();
         }

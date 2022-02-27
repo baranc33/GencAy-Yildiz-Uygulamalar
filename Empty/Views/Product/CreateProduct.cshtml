@@ -1,22 +1,2 @@
 ﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-@model Empty.Models.Product
 
-
-@*aynı controllerda bulunduğu için controller ismi belirtmemize gerek yoktur*@
-@*Aynı isimde 2 tane action var fakat tipi post olarak berlittiğimize git diyoruz bunu get te yapabilirdik.*@
-<form asp-action="CreateProduct"  method="post">
-    <input type="text" asp-for="ProductName" placeholder="Product Name" />
-    <br />
-    <input type="text" asp-for="Quantity" placeholder="Quantity" />
-    <br />
-    <input type="button"/>
-
-    @Html.TextBoxFor(x=>x.ProductName,"",new{
-        placeholder="Product Name",
-        type="number"
-    });
-
-
-
-    <a asp-action="createProduct" asp-controller="Product" asp-route-id="5" asp-route-name="test" asp-route-StringQuery="asd"></a>
-</form>
