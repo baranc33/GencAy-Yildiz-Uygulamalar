@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 namespace Empty.Models
 {
 
-    [ModelMetadataType(typeof(ProductMetadata))]
+    //[ModelMetadataType(typeof(ProductMetadata))]
     public class Product
     {
         public int Id { get; set; }
