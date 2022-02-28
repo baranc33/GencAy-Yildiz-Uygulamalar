@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+
+    <p>Layout</p>
+    <!--Burdaki kodlar temsil ettiği bütün sayfalarda geçerlidir -->
+    <div class="col-md-2">
+        @RenderSection("SolMenu",false);
+        <!--birinci paramter RenderSection  ismi -->
+        <!--ikinci paramter RenderSection  her sayfada zorunlu olup olmadığını belirtir-->
+    </div>
+    <div class="col-md-8">
+        @RenderBody()
+    </div>
+
+    <!--Burdaki kodlar temsil ettiği bütün sayfalarda geçerlidir -->
+</body>
+</html>

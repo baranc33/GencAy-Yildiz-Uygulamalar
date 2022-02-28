@@ -1,7 +1,4 @@
-﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-@addTagHelper *, Empty
-
-
+﻿
 
 <email mail="bla" display="Deneme">
 
@@ -9,3 +6,11 @@
 
 
   <a asp-action="GetProduct" asp-controller="Product">Product</a> 
+
+  @section SolMenu{
+      <ul>
+          <li>A</li>
+          <li>B</li>
+          <li>C</li>
+      </ul>
+  }

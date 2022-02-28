@@ -12,7 +12,7 @@ namespace Empty.Controllers
         {
             var Tuple = (new Product(), new User());
 
-            return View(Tuple);
+            return View(new Product());
         }
 
 
@@ -23,16 +23,21 @@ namespace Empty.Controllers
         }
 
         [HttpGet]
-        public IActionResult CreateProduct( )
+        public IActionResult CreateProduct(  )
         {
+          
             var Header = Request.Headers.ToList();
-            return View();
+            return View(new Product());
         }
 
 
         [HttpPost]
         public IActionResult CreateProduct(Product entity)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(entity);
+            }
             return View();
         }
         
