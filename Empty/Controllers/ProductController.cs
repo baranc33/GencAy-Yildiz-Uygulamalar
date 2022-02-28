@@ -10,9 +10,17 @@ namespace Empty.Controllers
 
         public IActionResult GetProduct()
         {
-            return View();
+            var Tuple = (new Product(), new User());
+
+            return View(Tuple);
         }
 
+
+        [HttpPost]
+        public IActionResult VeriAl([Bind(Prefix = "Item1")] Product product, [Bind(Prefix = "Item1")] User user)
+        {
+            return View();
+        }
 
         [HttpGet]
         public IActionResult CreateProduct( )
@@ -28,13 +36,6 @@ namespace Empty.Controllers
             return View();
         }
         
-
-        [HttpPost]
-        public IActionResult VeriAl( )
-        {
-            return View();
-        }
-
 
         [HttpPost]
         public IActionResult GetValue(IFormCollection entity)
