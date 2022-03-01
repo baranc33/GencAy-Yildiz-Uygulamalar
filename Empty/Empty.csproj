@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Views\Home\ViewComponent\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
