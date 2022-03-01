@@ -15,7 +15,7 @@
 
     <header>
 
-        <partial name="~/Views/Home/_HeaderPartial.cshtml" />
+        <partial name="~/Views/Home/Partial/_HeaderPartial.cshtml" />
     </header>
 
     <section>
@@ -31,6 +31,9 @@
         </div>
     </section>
 
+    <footer>
+        <partial name="~/Views/Home/Partial/_FooterPartial.cshtml" model="@ViewBag.Data" />
+    </footer>
     <!--Burdaki kodlar temsil ettiği bütün sayfalarda geçerlidir -->
 </body>
 </html>

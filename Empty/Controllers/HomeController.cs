@@ -11,9 +11,9 @@ namespace Empty.Controllers
         {
             Product product = new Product { Id = 1, ProductName = "", Quantity = 10 };
             User user = new User { Id = 1, Name = "", LastName = "" };
-
-            var userProduct = (user, product);
-            return View(userProduct);
+            
+            List<string> Kelimler = new List<string> { "Hakan", "Baran ", "Çakır" };
+            return View(Kelimler);
         }
 
 
