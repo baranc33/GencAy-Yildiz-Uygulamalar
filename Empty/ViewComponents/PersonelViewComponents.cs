@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Empty.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Empty.ViewComponents
 {
@@ -6,8 +7,15 @@ namespace Empty.ViewComponents
     {
        public IViewComponentResult Invoke()
         {
+            List<Personel> datas = new List<Personel>()
+            {
+                new Personel{Adi="Hakan Baran",SoyAdi="Çakır"},
+                new Personel{Adi="Müjdat",SoyAdi="Özkan"},
+                new Personel{Adi="Melih Ömer",SoyAdi="Kamar"},
+                new Personel{Adi="Ayhan",SoyAdi="Buğdaycı"},
+            };
 
-            return View();
+            return View(datas);
         }
     }
 }
