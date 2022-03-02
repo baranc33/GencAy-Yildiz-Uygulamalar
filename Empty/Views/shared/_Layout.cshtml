@@ -32,7 +32,7 @@
     </section>
 
     <footer>
-        <partial name="~/Views/Home/Partial/_FooterPartial.cshtml" model="@ViewBag.Data" />
+        @await Component.InvokeAsync("Personel",new {id=5})
     </footer>
     <!--Burdaki kodlar temsil ettiği bütün sayfalarda geçerlidir -->
 </body>
