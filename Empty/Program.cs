@@ -18,6 +18,7 @@ app.UseEndpoints(endpoints =>
     // route mekanizmasýnda her parametre {} süslüler içersinde yer alýr
     //endpoints.MapControllerRoute("MyRoute", "{controller=product}/{action=GetProduct}/{id?}/{name?}");
 
+
     // eðer yukardaki tanýma uymazsa bu çalýþýr  eðer bunada uymazsa  alttakine geçer o yüzden
     // default tanýmlama herzaman en altta kalmalýdýr
     endpoints.MapDefaultControllerRoute();

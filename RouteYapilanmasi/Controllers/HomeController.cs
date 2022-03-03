@@ -5,7 +5,7 @@ using System.Diagnostics;
 namespace RouteYapilanmasi.Controllers
 {
 
-    [Route("AnaSayfa")]
+    //[Route("AnaSayfa")]
         public class HomeController : Controller
         {
             private readonly ILogger<HomeController> _logger;
@@ -15,7 +15,7 @@ namespace RouteYapilanmasi.Controllers
             _logger = logger;
         }
 
-        [Route("IlkSayfa/{id?}")]
+        //[Route("IlkSayfa/{id?}")]
         public IActionResult Index(int id)
         {
             return View();

@@ -27,10 +27,9 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-app.MapControllers();
-//app.MapControllerRoute("default2", "AnaSayfa", new { controller = "Home", action = "Index" });
-//app.MapControllerRoute(
-//    name: "default",
-//    pattern: "{controller=Home}/{action=Index}/{id?}");
+app.MapControllerRoute("default2", "AnaSayfa", new { controller = "Home", action = "Index" });
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
