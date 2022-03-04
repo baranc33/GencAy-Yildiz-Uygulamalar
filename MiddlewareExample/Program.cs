@@ -1,3 +1,5 @@
+using MiddlewareExample.Extensions;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -16,20 +18,22 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+
+app.UseHello();
+
 app.UseHttpsRedirection();
 
 
+//app.Use(async (context, next) =>
+//{
+//    Console.WriteLine("Start");
+//    await next.Invoke();
+//    Console.WriteLine("Finish");
+//});
 
-app.Use(async (context, next) =>
-{
-    Console.WriteLine("Start");
-    await next.Invoke();
-    Console.WriteLine("Finish");
-});
-
-app.Run(async context =>{
-    global::System.Console.WriteLine("Run");
-});
+//app.Run(async context =>{
+//    global::System.Console.WriteLine("Run");
+//});
 
 
 

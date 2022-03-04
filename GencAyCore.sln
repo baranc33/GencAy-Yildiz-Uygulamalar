@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomRootHandler", "Custom
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiddlewareExample", "MiddlewareExample\MiddlewareExample.csproj", "{29276FE6-FF81-40B9-BEA7-CC15DA7EFDBE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dependency_Ijection", "Dependency_Ijection\Dependency_Ijection.csproj", "{7525BFB0-A2C1-4A42-984E-4C68354195A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{29276FE6-FF81-40B9-BEA7-CC15DA7EFDBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29276FE6-FF81-40B9-BEA7-CC15DA7EFDBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29276FE6-FF81-40B9-BEA7-CC15DA7EFDBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7525BFB0-A2C1-4A42-984E-4C68354195A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7525BFB0-A2C1-4A42-984E-4C68354195A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7525BFB0-A2C1-4A42-984E-4C68354195A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7525BFB0-A2C1-4A42-984E-4C68354195A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
