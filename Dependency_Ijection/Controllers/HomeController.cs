@@ -1,4 +1,5 @@
 ﻿using Dependency_Ijection.Models;
+using Dependency_Ijection.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -6,14 +7,14 @@ namespace Dependency_Ijection.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILog _log;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILog log)
         {
-            _logger = logger;
+            _log = log;
         }
 
-        public IActionResult Index()
+        public IActionResult Index([FromServices]ILog log)
         {
             return View();
         }
