@@ -32,6 +32,9 @@ namespace CustomRootHandler.Handlers
                     height = int.Parse(x.Request.Query["h"].ToString());
                 }
 
+                // önce w tanımladığımız için w e göre resim ayarlar h otomatik yapar  h yi işlemez
+                // eğer w yoksa h için işlem yapar 2 side yoksa orjinal boyutu gönderir.
+
                 // bu işlemleri gerçekleştir
                 magick.Resize(width, height);
                 // resmi byte formatına çevirelim
