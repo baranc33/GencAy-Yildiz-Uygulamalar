@@ -1,0 +1,8 @@
+﻿
+@*<!--Html helper ile Area link oluşruma-->
+
+@Html.ActionLink("yönetim","Index","Home", new {area="yönetim"})
+<a href="@Url.Action("Index","Controller",new {area="yönetim"})">Yönetim</a>
+
+<!--Tag helper area link-->
+<a asp-action="Index" asp-controller="home" asp-area="yönetim">yönetim</a>*@

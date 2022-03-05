@@ -20,19 +20,6 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-app.MapAreaControllerRoute(
-    name: "MyArea2",
-    areaName: "Yonetim_Paneli",
-    pattern: "Admin/{controller=Home}/{action=Index}/{id?}"
-    );
-
-
-app.MapControllerRoute(
-    name: "MyArea",
-    pattern: "{area}/{controller=Home}/{action=Index}/{id?}");
-
-
-
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

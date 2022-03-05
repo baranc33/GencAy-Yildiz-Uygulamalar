@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dependency_Ijection", "Depe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Areea", "Areea\Areea.csproj", "{335CFBDE-5329-4911-9324-75CAC46902CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModelAndDto", "ViewModelAndDto\ViewModelAndDto.csproj", "{FF8E239B-DBE9-406A-B805-EDFBB8CA5399}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{335CFBDE-5329-4911-9324-75CAC46902CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{335CFBDE-5329-4911-9324-75CAC46902CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{335CFBDE-5329-4911-9324-75CAC46902CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF8E239B-DBE9-406A-B805-EDFBB8CA5399}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF8E239B-DBE9-406A-B805-EDFBB8CA5399}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF8E239B-DBE9-406A-B805-EDFBB8CA5399}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF8E239B-DBE9-406A-B805-EDFBB8CA5399}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
