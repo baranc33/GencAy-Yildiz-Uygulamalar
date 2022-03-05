@@ -17,8 +17,8 @@ namespace AppSettingsJson.Controllers
 
         public IActionResult Index()
         {
-            Person p = new Person();
-          var   ps = _configuration.GetSection("Person").Get(typeof(Person));
+          //  Person p = new Person();
+          //var   ps = _configuration.GetSection("Person").Get(typeof(Person));
 
             return View();
         }
