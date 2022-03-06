@@ -10,10 +10,9 @@ namespace configurationExample.Controllers
         private readonly IConfiguration _configuration;
         private readonly MailInfo _o;
 
-        public HomeController(IConfiguration configuration,IOptions<MailInfo> o)
+        public HomeController(IOptions<MailInfo> o)
         {
             _o = o.Value;
-            _configuration = configuration;
         }
 
         public IActionResult Index()
