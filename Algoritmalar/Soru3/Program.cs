@@ -49,7 +49,7 @@ do
 Console.WriteLine(ToplamSonuc);
 
 */
-/*Çözüm 5*/
+/*Çözüm 5
 
 int sayac = 1;
 double ToplamSonuc = 0;
@@ -63,3 +63,24 @@ do
 } while (true);// sayaç içerde arttığı için 1 eksik hesaplamalıyız
 
 Console.WriteLine(ToplamSonuc);
+*/
+
+
+int sayac = 1;
+double ToplamSonuc = 0;
+string sonuc = "";
+while (sayac<=10)
+{
+    ToplamSonuc+=Math.Pow(sayac, 3);
+
+    if (sayac !=10)
+    {// küp karakteri karakter eşlemden alındı
+        sonuc+=$"{sayac}³ + ";
+    }
+    else
+        sonuc += $"= {ToplamSonuc}";
+
+    sayac++;
+}
+
+Console.WriteLine(sonuc);
