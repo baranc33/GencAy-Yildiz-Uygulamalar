@@ -1,7 +1,7 @@
 ﻿// girilen sayının faktöriyelini hesaplayan uygulama yazınız
 
 
-/* Çözüm 1 */
+/* Çözüm 1 
 
 
 Console.WriteLine("Lütfen Bir Sayı Giriniz");
@@ -14,7 +14,21 @@ for (int i = sayi; i>0; i--)
 }
 
 Console.WriteLine(sonuc);
+*/
+/* Çözüm 2*/
 
-/* Çözüm */
-/* Çözüm */
-/* Çözüm */
+Console.WriteLine("Lütfen Bir Sayı Giriniz");
+int sayi = int.Parse(Console.ReadLine());
+int sonuc = 1;
+
+while (sayi >0)
+{
+    sonuc*=sayi;
+    sayi--;
+
+}
+Console.WriteLine(sonuc);
+
+
+/* Çözüm 3*/
+/* Çözüm 4*/
