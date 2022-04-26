@@ -45,7 +45,7 @@ while (sayi>0);
 Console.WriteLine(sonuc);
 */
 
-/* Çözüm 4*/
+/* Çözüm 4
 
 Console.WriteLine("Lütfen Bir Sayı Giriniz");
 int sayi = int.Parse(Console.ReadLine());
@@ -66,3 +66,27 @@ for (int i = sayi; i > 0; i--)
 }
 
 Console.WriteLine(sonuc);
+*/
+/* Çözüm 5 */
+Console.WriteLine("Lütfen Bir Sayı Giriniz");
+int sayi = int.Parse(Console.ReadLine());
+int sonuc = 1;
+string _sonuc = "";
+
+while (sayi>0)
+{
+    sonuc*=sayi;
+    if (sayi !=1)
+    {
+        _sonuc+=$"{sayi} X ";
+    }
+    else
+    {
+        _sonuc+=$"{sayi} = {sonuc}";
+
+    }
+    sayi--;
+}
+
+
+Console.WriteLine(_sonuc);

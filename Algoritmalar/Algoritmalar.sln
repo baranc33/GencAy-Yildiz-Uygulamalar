@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Soru3", "Soru3\Soru3.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Soru4", "Soru4\Soru4.csproj", "{C4FF1BF3-7D30-4AE0-9639-93490665BC5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soru5", "Soru5\Soru5.csproj", "{4907ED05-A3E7-4E6A-B1B6-8BF8D0BE2020}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Soru5", "Soru5\Soru5.csproj", "{4907ED05-A3E7-4E6A-B1B6-8BF8D0BE2020}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soru6", "Soru6\Soru6.csproj", "{EB04338E-0A45-4B70-8C91-191118E24E92}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{4907ED05-A3E7-4E6A-B1B6-8BF8D0BE2020}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4907ED05-A3E7-4E6A-B1B6-8BF8D0BE2020}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4907ED05-A3E7-4E6A-B1B6-8BF8D0BE2020}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB04338E-0A45-4B70-8C91-191118E24E92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB04338E-0A45-4B70-8C91-191118E24E92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB04338E-0A45-4B70-8C91-191118E24E92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB04338E-0A45-4B70-8C91-191118E24E92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
