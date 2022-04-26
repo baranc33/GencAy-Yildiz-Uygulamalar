@@ -31,7 +31,7 @@ while (sayac>0)
 Console.WriteLine($"{sayi1} x {sayi2} = {sonuc}");
 */
 
-/* Çözüm 3*/
+/* Çözüm 3
 
 Console.WriteLine("Lütfen bir sayı giriniz");
 int sayi1 = Convert.ToInt32(Console.ReadLine());
@@ -49,7 +49,36 @@ do
 while (sayac>0);
 
 Console.WriteLine($"{sayi1} x {sayi2} = {sonuc}");
+*/
+/* Çözüm 4 recursive*/
+Console.WriteLine("Lütfen bir sayı giriniz");
+int sayi1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Lütfen bir sayı giriniz");
+int sayi2 = Convert.ToInt32(Console.ReadLine());
 
-/* Çözüm 4*/
+int sonuc = Topla(sayi1, sayi2);
+
+Console.WriteLine($"recursive : {sayi1} x {sayi2} = {sonuc}");
 /* Çözüm 5 */
 /* Çözüm 6*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+static int Topla(int sayi1,int sayi2)
+{
+    if (sayi2 >1)
+    {
+        return sayi1+Topla(sayi1, --sayi2);
+    }
+    return sayi1;
+}
