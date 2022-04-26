@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algoritmalar", "Algoritmalar\Algoritmalar.csproj", "{3F9F2A28-8712-450E-B096-E1EFC9EF2CE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algoritmalar", "Algoritmalar\Algoritmalar.csproj", "{3F9F2A28-8712-450E-B096-E1EFC9EF2CE0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soru2", "Soru2\Soru2.csproj", "{7C853175-82A7-4205-B2AA-AA5E33E8D6C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Soru2", "Soru2\Soru2.csproj", "{7C853175-82A7-4205-B2AA-AA5E33E8D6C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soru3", "Soru3\Soru3.csproj", "{2AEDADC8-53F2-429D-9588-FBD0BC459A41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Soru3", "Soru3\Soru3.csproj", "{2AEDADC8-53F2-429D-9588-FBD0BC459A41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soru4", "Soru4\Soru4.csproj", "{C4FF1BF3-7D30-4AE0-9639-93490665BC5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Soru4", "Soru4\Soru4.csproj", "{C4FF1BF3-7D30-4AE0-9639-93490665BC5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soru5", "Soru5\Soru5.csproj", "{4907ED05-A3E7-4E6A-B1B6-8BF8D0BE2020}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{C4FF1BF3-7D30-4AE0-9639-93490665BC5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4FF1BF3-7D30-4AE0-9639-93490665BC5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4FF1BF3-7D30-4AE0-9639-93490665BC5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4907ED05-A3E7-4E6A-B1B6-8BF8D0BE2020}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4907ED05-A3E7-4E6A-B1B6-8BF8D0BE2020}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4907ED05-A3E7-4E6A-B1B6-8BF8D0BE2020}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4907ED05-A3E7-4E6A-B1B6-8BF8D0BE2020}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
