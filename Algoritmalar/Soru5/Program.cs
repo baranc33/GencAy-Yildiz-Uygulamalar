@@ -29,7 +29,7 @@ while (sayi >0)
 Console.WriteLine(sonuc);
 */
 
-/* Çözüm 3*/
+/* Çözüm 3/
 
 Console.WriteLine("Lütfen Bir Sayı Giriniz");
 int sayi = int.Parse(Console.ReadLine());
@@ -43,5 +43,26 @@ do
 }
 while (sayi>0);
 Console.WriteLine(sonuc);
+*/
 
 /* Çözüm 4*/
+
+Console.WriteLine("Lütfen Bir Sayı Giriniz");
+int sayi = int.Parse(Console.ReadLine());
+int toplam = 1;
+string sonuc = "";
+for (int i = sayi; i > 0; i--)
+{
+    if (i > 1)
+    {
+        sonuc += $"{i} X ";
+        toplam*=i;
+    }
+    else
+    {
+        toplam*=i;
+        sonuc += $"{i} = {toplam} ";
+    }
+}
+
+Console.WriteLine(sonuc);
