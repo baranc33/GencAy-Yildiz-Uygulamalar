@@ -16,7 +16,7 @@ for (int i = 0; sayi2 <= sayi1; i++)// i bölünenden küçük olması gerekiyor
 Console.WriteLine(sonuc);
 
 */
-/*Çözüm  1*/
+/*Çözüm  1
 Console.WriteLine("Lütfen Bölmek istediğiniz Sayıyı giriniz");
 int sayi1 = int.Parse(Console.ReadLine());
 Console.WriteLine("Lütfen Bölen Sayıyı giriniz");
@@ -37,8 +37,24 @@ for (int i = 0; i < _sayi1; i++)// i bölünenden küçük olması gerekiyor bö
     }
 }
 Console.WriteLine($"{_sayi1} / {sayi2} = {sonuc}");
-Console.WriteLine($"Kalan = {kalan}");
+Console.WriteLine($"Kalan = {kalan}");*/
 /*Çözüm  2*/
+Console.WriteLine("Lütfen Bölmek istediğiniz Sayıyı giriniz");
+int sayi1 = int.Parse(Console.ReadLine());
+Console.WriteLine("Lütfen Bölen Sayıyı giriniz");
+int sayi2 = int.Parse(Console.ReadLine());
+int sonuc = 0;
+int _sayi = sayi1;
+while (true)
+{
+    sayi1-=sayi2;
+    sonuc++;
+    if (sayi1 <sayi2) break;
+}
+
+Console.WriteLine($"Sonuç = {sonuc}");
+Console.WriteLine($"Kalan = {sayi1}");
+
 /*Çözüm  3*/
 /*Çözüm  4*/
 /*Çözüm  5*/
