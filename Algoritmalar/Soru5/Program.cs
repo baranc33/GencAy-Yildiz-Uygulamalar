@@ -67,7 +67,7 @@ for (int i = sayi; i > 0; i--)
 
 Console.WriteLine(sonuc);
 */
-/* Çözüm 5 */
+/* Çözüm 5
 Console.WriteLine("Lütfen Bir Sayı Giriniz");
 int sayi = int.Parse(Console.ReadLine());
 int sonuc = 1;
@@ -90,3 +90,29 @@ while (sayi>0)
 
 
 Console.WriteLine(_sonuc);
+
+*/
+
+/* Çözüm 6 recursive kullanım*/
+
+
+Console.WriteLine("Lütfen Bir Sayı giriniz");
+int sonuc =Faktoriyel(Convert.ToInt32(Console.ReadLine()));
+
+Console.WriteLine($"Sonuç = {sonuc}");
+
+
+
+
+
+
+
+static int Faktoriyel(int sayi)
+{
+    if (sayi > 1)
+    {
+        return sayi* Faktoriyel(--sayi);
+    }
+
+    return sayi;
+}
