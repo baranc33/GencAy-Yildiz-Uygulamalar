@@ -1,6 +1,6 @@
 ﻿//  pozitif sayılarda çarpma işlemini toplama kulanarak bulan uygulamayı yazınız.
 
-/* Çözüm 1 */
+/* Çözüm 1 
 Console.WriteLine("Lütfen bir sayı giriniz");
 int sayi1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Lütfen bir sayı giriniz");
@@ -13,4 +13,10 @@ for (int i = 0; i < sayi2; i++)
 }
 
 
-Console.WriteLine(toplam);
+Console.WriteLine($"{sayi1} x {sayi2} = {toplam}");*/
+/* Çözüm 2*/
+
+/* Çözüm 3*/
+/* Çözüm 4*/
+/* Çözüm 5 */
+/* Çözüm 6*/
