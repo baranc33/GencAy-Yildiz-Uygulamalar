@@ -6,14 +6,25 @@
 // Ram Bölümleri
 
 
-int sayi1 = 15;
-int sayi2 = 10;
 
-int sayi3 = sayi1 + sayi2;
+long a;
 
-Console.WriteLine(sayi3);
 
 /*
+Değişken Nedir 
+Programlama yapılırken verilen bir değeri bilgisayarın hafızasında tutan ve 
+istediğimiz yerde kullanmamızı sağlayan verilere değişken adı verilmektedir
+
+Formül
+Türü   DeğişkenAdi ;
+
+
+
+Her Satır Kod Bittiğinde  Noktalı virgül Kullanılır(;).
+
+
+
+ 
 1.Stack bölgesi
 Değer(value) Tip dediğimiz nesneler burda kalır
 stack pointer dediğimiz bölgeler sayesinde doğrudan erişilebilir
