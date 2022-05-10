@@ -5,9 +5,18 @@
 
 // Ram Bölümleri
 
+// ctrl k + ctrl D  => kodlarını düzeltir.
+int sayi1 = 5;
+int sayi2 = 6;
+int sayi3=sayi1 + sayi2;
+//Console.WriteLine(sayi3);
+string Adi1 = "Yunus";
+string Adi2 = " idi";
 
+string bas = Adi1.Substring(0, 2).ToUpper();
+string Adi3 = bas+Adi1.Substring(2)+Adi2;
+Console.WriteLine(Adi3);
 
-long a;
 
 
 /*
@@ -22,10 +31,16 @@ Türü   DeğişkenAdi ;
 
 Her Satır Kod Bittiğinde  Noktalı virgül Kullanılır(;).
 
-
+Derslerde kullanacağımız Veri tipleri
+int => Sayısal veri tipleri => Tam Sayılar 
+double => ondalıklı sayılar için => nokta ile ondalıklı
+string => kelimeler için  => çift tırnaklar içinde yazılmalı
+bool => mantıksal işlemler için
+DateTime => Tarih için
 
  
 1.Stack bölgesi
+
 Değer(value) Tip dediğimiz nesneler burda kalır
 stack pointer dediğimiz bölgeler sayesinde doğrudan erişilebilir
 stack bölgesinde olan değişkenler  çalışma zamanı öncesi ramde ne kadar yer kapliyacağı bilinmesi gerekir
