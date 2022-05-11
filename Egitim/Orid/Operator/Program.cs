@@ -57,6 +57,57 @@ Console.WriteLine(Sonuc);
 
 
 
+/* 4. işlem Operatörleri 
+   ++x;  işlemden önce 1 arttır
+   x++;  işlemden sonra 1 arttır
+   --x;  işlemden önce 1 azalt
+   x--;  işlemden sonra 1 azalt
+   x+=y;  ekleme 
+   x-=y;  çıkarma 
+   x*=y;  çarpma 
+   x/=y; Bölme
+   x %=y; kalan
+++x;// bulunduğu satırda işlem yapar daha sonra 1 arttırır
+++x; // önce bir arttırrır daha sonra satırdaki işlemi yapar
+
+int x = 0; //   0
+x++;// 1
+++x;//  2
+x = 5; // 5 
+x++;  // 6
+
+int y = 6;
+x = y++ + 3;  // 9
+// y=7  x=9
+Console.WriteLine(y); */
+
+/*
+
+int x = 5;
+// x = x + 5;
+ x += 3; // 8
+x -= 1;  // 7
+x++; // 8
+--x;// 7
+x=3; // 3
+Console.WriteLine(x+=3);// 6
+Console.WriteLine(x--); // 6
+Console.WriteLine(x);  // 5
+*/
+
+/* 5 diğer operatörler 
+   tersi !
+ */
+
+//bool dogrumu = 5 > 6; // false
+//Console.WriteLine(!dogrumu);
+
+int sayi1 = Convert.ToInt32(Console.ReadLine());
+//int sayi2 = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine(sayi1 * sayi1);
+/*
+
 /*
  Çalıştırılacak Proje Ayarlama
  1. yöntem üst menünden ayarlıyoruz 
