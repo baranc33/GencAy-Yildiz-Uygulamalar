@@ -6,39 +6,39 @@
 // Ram Bölümleri
 
 // ctrl k + ctrl D  => kodlarını düzeltir.
-int sayi1 = 5;
-int sayi2 = 6;
-int sayi3=sayi1 + sayi2;
-//Console.WriteLine(sayi3);
-string Adi1 = "Yunus";
-string Adi2 = " idi";
+/*
+ int => Sayısal veri tipleri => Tam Sayılar 
+double => ondalıklı sayılar için => nokta ile ondalıklı
+string => kelimeler için  => çift tırnaklar içinde yazılmalı
+bool => mantıksal işlemler için
+0=> false
+1=> true 
 
-string bas = Adi1.Substring(0, 2).ToUpper();
-string Adi3 = bas+Adi1.Substring(2)+Adi2;
-Console.WriteLine(Adi3);
+DateTime => Tarih için
 
+ */
 
+// oyuncu =>Ne sıklkla oynadığı / karakteri / lwli / oyuna para yatırmışmı /
+/*Birinci Yöntem Değişken Oluşturma Daha sonra değer atama*/
+DateTime oynamaSikligi;
+string Karakteri;
+int lwl;
+
+bool ptw;
+//string Karakteri= "Nodaçi";// yeni bir değişken oluşturma
+Karakteri = "Nodaçi";
+Karakteri = "Uzun Kılıç";
+Karakteri ="Baltalı Kargı";
+
+Console.WriteLine(Karakteri);
 
 /*
-Değişken Nedir 
-Programlama yapılırken verilen bir değeri bilgisayarın hafızasında tutan ve 
-istediğimiz yerde kullanmamızı sağlayan verilere değişken adı verilmektedir
-
 Formül
 Türü   DeğişkenAdi ;
 
 
 
-Her Satır Kod Bittiğinde  Noktalı virgül Kullanılır(;).
 
-Derslerde kullanacağımız Veri tipleri
-int => Sayısal veri tipleri => Tam Sayılar 
-double => ondalıklı sayılar için => nokta ile ondalıklı
-string => kelimeler için  => çift tırnaklar içinde yazılmalı
-bool => mantıksal işlemler için
-DateTime => Tarih için
-
- 
 1.Stack bölgesi
 
 Değer(value) Tip dediğimiz nesneler burda kalır
@@ -62,4 +62,14 @@ Bellekte herhangi bir bölgeyi temsil eder
 bu bölgedeki nesneler programın akışı boyunca kullanılacağı için hep tutulurlar 
 bir static nesne oluşturmak için  
 Static kelimesi kullanırız
+
+
+
+Notlar 
+1 - Yorum Satırları
+2 - ; noktalı virgül
+3 - stringlerde çift tırnak içinde değer veriyoruz
+4 - Var olan Değişkeni Kullanırken Tipini/türünü  yazmayız
+5 - Aynı blok içersinde aynı isimden 1 tane değişken olabilir.
+6 - Kodlar Yukardan Aşşağıya Doğru okunur.
 */
