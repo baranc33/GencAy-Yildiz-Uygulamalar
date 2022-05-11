@@ -43,7 +43,6 @@ int guc=5, ceviklik, saglik, zirh;
 ceviklik=10;*/
 
 
-
 /*
 Formül
 Türü   DeğişkenAdi ;
