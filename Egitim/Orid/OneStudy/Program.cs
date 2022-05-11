@@ -19,7 +19,7 @@ DateTime => Tarih için
  */
 
 // oyuncu =>Ne sıklkla oynadığı / karakteri / lwli / oyuna para yatırmışmı /
-/*Birinci Yöntem Değişken Oluşturma Daha sonra değer atama*/
+/*Birinci Yöntem Değişken Oluşturma Daha sonra değer atama
 DateTime oynamaSikligi;
 string Karakteri;
 int lwl;
@@ -30,7 +30,19 @@ Karakteri = "Nodaçi";
 Karakteri = "Uzun Kılıç";
 Karakteri ="Baltalı Kargı";
 
-Console.WriteLine(Karakteri);
+Console.WriteLine(Karakteri);*/
+/*2. Yöntem Değişken oluştururken Değer Atama
+string karakter = "nodaçi";*/
+
+/*3. yöntem Toplu Oluşturma sonra değer atma 
+int guc, ceviklik,saglik,zirh;
+guc=5;
+ceviklik=5;*/
+/*4. yöntem Toplu Oluştururken Değer Atama
+int guc=5, ceviklik, saglik, zirh;
+ceviklik=10;*/
+
+
 
 /*
 Formül
