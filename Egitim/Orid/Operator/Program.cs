@@ -17,14 +17,14 @@
 //sayi3=sayi1 % sayi2;
 
 //Console.WriteLine(sayi3);
-/* Bölüm 2  Mantıksal işlemler
+/* Bölüm 2  Karşılaştırma işlemler
     Küçüktür  <
     Büyüktür  >
     Küçük Eşit   <=
     Büyük Eşit   >=
     Eşittir      ==
     Eşit Değildir.  !=
- */
+
 int sayi1 = 3, sayi2 = 4, sayi3 = 7, sayi4 = 2, sayi5 = 2, sayi6 = 11;
 
 bool Sonuc = sayi1>sayi2;// false
@@ -35,6 +35,26 @@ bool Sonuc5 = sayi1+sayi2 > sayi3;// false
 bool Sonuc6 = sayi1+sayi2 >= sayi3;// false
 
 Console.WriteLine(Sonuc6);
+ */
+
+/* Bölüm 3 Mantıksal Opartörler 
+    Ve    &&  shift + 6
+    Veya  ||  alt gr + küçüktür
+    Yada  ^ => shift + 3  
+
+// bakkaldan  Cipsi ... Kola al
+// ve => 2 seçeneğinde true olması durumu
+// veya =>  en az 1 tanesi true olması durmu
+// yada  => sadece 1 tane true 
+
+int a = 5;
+int b = 7;
+
+bool Sonuc = (a == 5   &&   b == 6) || ( a+b >= 12 );
+
+Console.WriteLine(Sonuc);
+ */
+
 
 
 /*
