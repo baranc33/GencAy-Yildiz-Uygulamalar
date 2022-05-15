@@ -1,10 +1,54 @@
-﻿/* Bölüm 1 Matematiksel Opartörler 
+﻿/*  Bölüm 1 Matematiksel Opartörler 
     Toplama +
     Çıkarma -
     Çarpma  *
     Bölme   /
     Kalan   %
  */
+
+//int sayi1;
+//int sayi2;
+//int sayi3;
+//int sayi4;
+//sayi1 = 10;
+//sayi2 = 5;
+//sayi3 =5;
+//sayi4=2;
+
+//int sayi6 = 10 % 3;
+
+
+
+
+////double sayi7 = 2.2 + 2.4;
+////Console.WriteLine(sayi7);
+
+////string sayi7 = "32" + "23";
+////Console.WriteLine(sayi7);
+
+
+// yunus 4.6
+// şafak  4.6
+// 
+
+
+//sayi3 = 3  * (sayi1 / sayi2);
+//  2 ve 4 ü çarp  1 ve 3 çarp  2ve 4 ün sonucndan çıkanı 1 ve 3 ün çıkan sonucuna böl
+
+// değişken isimleri Çift Tırnak içinde Yazılmaz
+// Sadece String Değişkeninin Değeri çift Tırnak içinde Yazılır
+
+
+// cw tap tap =>Parantezleirn içine ne yazarsan Console yazar
+//Console.ReadLine(); // o anki Satırı Okumaya Yarar
+
+
+
+//string Yazi = Console.ReadLine();
+
+
+//Console.WriteLine(Yazi);
+
 
 // sayi 1 =10 sayi2=5 sayi3=7  sayi4=2 sayi5=2  sayi6=3
 // 1.soru  sayi1 ve sayi2 nin toplamından sayi 3 ü çıkar  
@@ -16,6 +60,9 @@
 //sayi2 = 3;
 //sayi3=sayi1 % sayi2;
 
+
+
+
 //Console.WriteLine(sayi3);
 /* Bölüm 2  Karşılaştırma işlemler
     Küçüktür  <
@@ -26,16 +73,23 @@
     Eşit Değildir.  !=
 
 int sayi1 = 3, sayi2 = 4, sayi3 = 7, sayi4 = 2, sayi5 = 2, sayi6 = 11;
-
-bool Sonuc = sayi1>sayi2;// false
-bool Sonuc2 = sayi1+sayi2 == sayi3; // true
-bool Sonuc3 = sayi1+sayi2 != sayi3; // false
-bool Sonuc4 = sayi1+sayi2 > sayi4+sayi5; // true
-bool Sonuc5 = sayi1+sayi2 > sayi3;// false
-bool Sonuc6 = sayi1+sayi2 >= sayi3;// false
-
-Console.WriteLine(Sonuc6);
  */
+// true false
+//bool Sonuc = (3*5) +2  < (5-4)*4;
+
+//Console.WriteLine(Sonuc);
+
+//bool Sonuc = "Hakan" != "hakan";
+//Console.WriteLine(Sonuc);
+
+//bool Sonuc = 2.400000== 2.40;
+
+//Console.WriteLine(Sonuc);
+
+
+
+
+
 
 /* Bölüm 3 Mantıksal Opartörler 
     Ve    &&  shift + 6
@@ -46,16 +100,16 @@ Console.WriteLine(Sonuc6);
 // ve => 2 seçeneğinde true olması durumu
 // veya =>  en az 1 tanesi true olması durmu
 // yada  => sadece 1 tane true 
-
-int a = 5;
-int b = 7;
-
-bool Sonuc = (a == 5   &&   b == 6) || ( a+b >= 12 );
-
-Console.WriteLine(Sonuc);
  */
+//int a = 5;
+//int b = 6;
+//  //           true     ^    false
+//bool Sonuc = ((a*5)>10) ^ (b+a*2) > 20; 
+//// şafak false
+//// ibrahim True
+//// yunus false
 
-
+//Console.WriteLine(Sonuc);
 
 /* 4. işlem Operatörleri 
    ++x;  işlemden önce 1 arttır
@@ -67,19 +121,36 @@ Console.WriteLine(Sonuc);
    x*=y;  çarpma 
    x/=y; Bölme
    x %=y; kalan
-++x;// bulunduğu satırda işlem yapar daha sonra 1 arttırır
+x++;// bulunduğu satırdaki işlem yapar daha sonra 1 arttırır
 ++x; // önce bir arttırrır daha sonra satırdaki işlemi yapar
 
-int x = 0; //   0
-x++;// 1
-++x;//  2
-x = 5; // 5 
-x++;  // 6
 
-int y = 6;
-x = y++ + 3;  // 9
-// y=7  x=9
-Console.WriteLine(y); */
+
+/// a=5  ise  a = a+ 5;  
+int a = 5;
+a += 5;
+a += 3;
+a--;
+a *=2;
+a+=100;
+a-=50;
+a/=2;
+
+Console.WriteLine(--a); 
+*/
+
+
+int a = 5;
+int b = 7;
+///           false                         true
+bool Sonuc = (a+5> 25  ||  a*b <=30) ^ (a+(++b)*2)> 20;
+Console.WriteLine(!Sonuc);
+
+// yunus    
+// ibrahim   true
+// şafak  true
+// hakan
+
 
 /*
 
@@ -102,10 +173,10 @@ Console.WriteLine(x);  // 5
 //bool dogrumu = 5 > 6; // false
 //Console.WriteLine(!dogrumu);
 
-int sayi1 = Convert.ToInt32(Console.ReadLine());
+//int sayi1 = Convert.ToInt32(Console.ReadLine());
 //int sayi2 = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine(sayi1 * sayi1);
+//Console.WriteLine(sayi1 * sayi1);
 /*
 
 /*

@@ -16,30 +16,28 @@ Back End => Arka planda Kullanıcının Görmediği Verisel işlemler
  */
 
 
-// 2 tarzda Kullanabiliriz
-// 1 yöntem Oluşturken Değer Atama
-// 2. yöntem önce oluşturup daha sonra atama yapmak
-int sayi2; // oluşturdum
-sayi2=5; // değer atadım
+    // 2 tarzda Kullanabiliriz
+    // 1 yöntem Oluşturken Değer Atama
+    // 2. yöntem önce oluşturup daha sonra atama yapmak
+    int sayi2; // oluşturdum
+    sayi2=5; // değer atadım
 
 
-// eğer bir değişken isminin solunda türü yazıyorsa yeni bir değişken
-// olduğu anlamına gelir
+    // eğer bir değişken isminin solunda türü yazıyorsa yeni bir değişken
+    // olduğu anlamına gelir
 
-// Kodlar Yukardan Aşşağıya Doğru Okunur
-int sayi1 = 2;
-sayi1 = 6; 
+    // Kodlar Yukardan Aşşağıya Doğru Okunur
+    int sayi1 = 2;
+    sayi1 = 6; 
 
-Console.WriteLine(sayi1);// ekrana yaz
-sayi1 = 5;
+    Console.WriteLine(sayi1);// ekrana yaz
+    sayi1 = 5;
 
+    //int Sayi3 = Sayi1+Sayi2;// daha Sayi1 ve Sayi2 Tanımlanmadığı için Hata verir
 
-
-int Sayi1 = 5;
-int Sayi2 = 3;
-
-
-int Sayi3 = Sayi1+Sayi2;
+    int Sayi1 = 5;
+    int Sayi2 = 3;
+    int Sayi3 = Sayi1+Sayi2;
 
 
 // şafak =5 
