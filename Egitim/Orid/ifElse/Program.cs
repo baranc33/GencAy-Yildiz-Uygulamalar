@@ -4,7 +4,7 @@ string Girdi = Console.ReadLine();
 
 int Sayi = Convert.ToInt32(Girdi);
 
-// girilen Sayının 25 tek küçük olup olmadığını Kontrol etcem
+//girilen Sayının 25 tek küçük olup olmadığını Kontrol etcem
 
 if (Sayi >25)
 {

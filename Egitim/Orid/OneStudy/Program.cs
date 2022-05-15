@@ -1,15 +1,75 @@
-﻿
-// Ram Nedir ?
+﻿// Burası Yorum Satırı 
 
-// Bilgisayarın Kısa süreli Küçük Hafıza belleği ve hızlı işlem belleğidir
+/*
+ Burasıda 
+Yorum Satırıdır
+ */
 
-// Ram Bölümleri
 
-// ctrl k + ctrl D  => kodlarını düzeltir.
+
+
+/*
+ Front End  Ve Back End
+Front End => Kullanıcının Gördüğü Görsel Kısmın
+Back End => Arka planda Kullanıcının Görmediği Verisel işlemler
+ 
+ */
+
+
+// 2 tarzda Kullanabiliriz
+// 1 yöntem Oluşturken Değer Atama
+// 2. yöntem önce oluşturup daha sonra atama yapmak
+int sayi2; // oluşturdum
+sayi2=5; // değer atadım
+
+
+// eğer bir değişken isminin solunda türü yazıyorsa yeni bir değişken
+// olduğu anlamına gelir
+
+// Kodlar Yukardan Aşşağıya Doğru Okunur
+int sayi1 = 2;
+sayi1 = 6; 
+
+Console.WriteLine(sayi1);// ekrana yaz
+sayi1 = 5;
+
+
+
+int Sayi1 = 5;
+int Sayi2 = 3;
+
+
+int Sayi3 = Sayi1+Sayi2;
+
+
+// şafak =5 
+// ibrahim =5
+// yunus =6 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
  int => Sayısal veri tipleri => Tam Sayılar 
 double => ondalıklı sayılar için => nokta ile ondalıklı
-string => kelimeler için  => çift tırnaklar içinde yazılmalı
+char => 1 karakter  // tek tırnak içine yazılır // ascii coduna göre işlem yapar
+string => birden fazla Charın birleşmişidir
+kelimeler için  => çift tırnaklar içinde yazılmalı
+
+
 bool => mantıksal işlemler için
 0=> false
 1=> true 
@@ -45,16 +105,21 @@ ceviklik=10;*/
 
 /*
 Formül
-Türü   DeğişkenAdi ;
+Türü   DeğişkenAdi;
 
+ Ram Nedir ? => Geçici Bellek 
+ Bilgisayarın Kısa süreli Küçük Hafıza belleği ve hızlı işlem belleğidir
+ Ram Bölümleri
 
+ 
 
 
 1.Stack bölgesi
 
 Değer(value) Tip dediğimiz nesneler burda kalır
 stack pointer dediğimiz bölgeler sayesinde doğrudan erişilebilir
-stack bölgesinde olan değişkenler  çalışma zamanı öncesi ramde ne kadar yer kapliyacağı bilinmesi gerekir
+stack bölgesinde olan değişkenler  çalışma zamanı öncesi ramde ne kadar 
+yer kapliyacağı bilinmesi gerekir
 bazı referans tipli değişkenlerin yoluda bu bölgede bulunur
 
 

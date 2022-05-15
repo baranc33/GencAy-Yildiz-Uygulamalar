@@ -1,0 +1,25 @@
+﻿@model WebApplication1.Models.insan;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@Model.adi</h1>
+    <h2 class="display-4">@Model.yas</h2>
+        @{
+            if (Model.cinsiyet)
+            {
+            <h3 class="display-4">
+                Erkek
+            </h3>
+
+        }
+        else
+        {
+             <h3 class="display-4">
+                Kadın
+            </h3>
+        }
+        }
+
+</div>
