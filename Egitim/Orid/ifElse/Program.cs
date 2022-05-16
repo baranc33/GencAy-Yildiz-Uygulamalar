@@ -14,9 +14,11 @@ if (sayi > 0)
 }
 
 if (sayi > 0 && sayi < 20)
-{
     Console.WriteLine("Sayı 0 ile 20 arasındadır");
-}
+else
+    Console.WriteLine("ifin dışında");
+
+
 
 
 

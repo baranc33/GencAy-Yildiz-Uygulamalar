@@ -1,8 +1,11 @@
 ﻿
-string o = "43,3";
+
+ string DersCalisioruzz = "43,3";
+
+
 string o2 = "23,3";
 
-double o1sayi = double.Parse(o);
+double o1sayi = double.Parse(DersCalisioruzz);
 double o2sayi = double.Parse(o2);
 
 double cevapsayi = o1sayi + o2sayi;
@@ -44,10 +47,10 @@ Console.WriteLine(cevapsayi);
 
 
 
-
 /*
  Convert.To.....(Dönüşecek)
  ....Parshe(Dönüşecek)
  
  
  */
+
