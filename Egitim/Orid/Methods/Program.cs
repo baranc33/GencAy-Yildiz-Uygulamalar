@@ -15,8 +15,8 @@ Notlar
 
 
 //Console.WriteLine("Hakan"); // =>  bu bir işlemdir
-                            // =>  hani bunun metodu
-                            // =>  hani c# %100  programlamaydı nesnemiz nerde metodumuz nerde ?
+// =>  hani bunun metodu
+// =>  hani c# %100  programlamaydı nesnemiz nerde metodumuz nerde ?
 
 
 
@@ -30,3 +30,7 @@ Notlar
 5- Parantezler içinde  metoda Gelen Değerler
 6- scope
  */
+
+
+
+
