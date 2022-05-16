@@ -1,37 +1,42 @@
-﻿// Console.ReadLine() Metodu ile Konsoldan Yazılan Yazıyı Alabiliriz 
-// Gelen Veri String Tipindedir
-string Girdi = Console.ReadLine();
-
-int Sayi = Convert.ToInt32(Girdi);
-
-//girilen Sayının 25 tek küçük olup olmadığını Kontrol etcem
-
-if (Sayi >25)
-{
-    Console.WriteLine("Girilen Sayı 25 den büyüktür");
-}
-else
-{
-    Console.WriteLine("Girilen Sayı 25 den Küçüktür");
-}
+﻿
+int Sayi = Convert.ToInt32(Console.ReadLine());
+// girilen sayının
+// 0-20 arasındamı
+// 21-40
+// 41-50
+// 51 den büyük  
 
 
-//if ( sayi1 > 20)
-//{
-//    Console.WriteLine("Girilen Sayı 20 den büyüktür");
-//}
-//else
-//{
-//    Console.WriteLine("Girilen Sayı 20 den Küçüktür");
+/*
+ Notlar 
+if => Karar Verme Mekanizması
+bir veya birden fazla şartın Kontrol Edilmesi durumlarında Kullanılır.
 
-//}
+* if başlangıç bloğu /   olması zorunludur  / şartı Vardır.
+* else if ler Orta bloklardır / olması zorunlu değildir / şartı  vardır.
+* Else bloğu Bitiş Bloğudur  / olması zorunulu değildir / şartı yoktur
 
 
-/* Karar Mekanizması
-  
- if ( Şartımızı)
-{
-    // yapılacak işlemi
-}
+Madde 1 
+her if bloğu sadece kendini temsil eder.
+
+Madde 2 
+if bloğuna Ek olarak Else if  veya else  Kullanıla bilir.
+
+Madde 3 
+Sıralama if - Else if ler - else.
+
+Madde 4 
+sınırsız Sayıda Else if kullanabiliriz.
+
+
+Madde 5 
+Üst bloktaki şart sağlanmadığı zaman Alt Bloğu kontrol eder
+üst bloktaki Sağlanır ise Alt bloklara bakmadan bütün blokları es geçer.
+ 
+Madde 6 
+Üst bloklar Çalışmadığında Eğer Else Bloğu varsa 
+Else Bloğunda şart a bakmaksızın çalışır.
 
  */
+

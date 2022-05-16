@@ -1,22 +1,53 @@
-﻿Console.WriteLine("Lütfen Bir Sayı Giriniz");
-int sayi1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Lütfen İkinci Sayıyı Giriniz");
-int sayi2 = int.Parse(Console.ReadLine());
-Console.WriteLine(sayi1+sayi2);
+﻿
+string o = "43,3";
+string o2 = "23,3";
+
+double o1sayi = double.Parse(o);
+double o2sayi = double.Parse(o2);
+
+double cevapsayi = o1sayi + o2sayi;
+
+Console.WriteLine(cevapsayi);
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Nesne YÖnelimli
+
+
+
+
+//string Sayi1 = "55";
+//string Sayi2 = "45";
+//string Sonuc = Sayi1 + Sayi2;
+
+//int  CevapSayi1 = Convert.ToInt32(Sayi1);
+//int CevapSayi2=  int.Parse(Sayi2);
+
+//int CevapSonuc= CevapSayi1 + CevapSayi2;
+
+
+//Console.WriteLine(CevapSonuc);
 
 
 
 
 
 /*
- 4 yöntem ile tür dönüşümü Sağliyabiliriz
-
-1. Convert Yöntemi 
-2. Parshe  
-
-3. Cast
-4. as 
-
-*/
+ Convert.To.....(Dönüşecek)
+ ....Parshe(Dönüşecek)
+ 
+ 
+ */
