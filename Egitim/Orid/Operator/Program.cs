@@ -140,11 +140,11 @@ Console.WriteLine(--a);
 */
 
 
-int a = 5;
-int b = 7;
-///           false                         true
-bool Sonuc = (a+5> 25  ||  a*b <=30) ^ (a+(++b)*2)> 20;
-Console.WriteLine(!Sonuc);
+//int a = 5;
+//int b = 7;
+/////           false                         true
+//bool Sonuc = (a+5> 25  ||  a*b <=30) ^ (a+(++b)*2)> 20;
+//Console.WriteLine(!Sonuc);
 
 // yunus    
 // ibrahim   true
@@ -185,3 +185,13 @@ Console.WriteLine(x);  // 5
 2. Yöntem projeye sağ tıklayıp  
 Set as Startup project e tıklıyoruz
  */
+
+
+/* as ve is operatörü
+As = Bildiğiniz gibi elimizdeki herhangi bir nesneyi T tipine çevirebiliyorsa,
+çeviren, yok eğer çeviremiyorsa null dönen bir operatördür.
+
+is = Eldeki nesnenin tipini tanımlamamızı sağlar. Yani hangi tipten(değişken)
+bir nesne olduğunu is operatörü ile sorgulayabilmekteyiz.
+
+*/
