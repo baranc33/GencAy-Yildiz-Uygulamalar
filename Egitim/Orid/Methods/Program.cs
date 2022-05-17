@@ -2,6 +2,7 @@
   1- Nesne içersinde Adı metot Nesne Dışında Adı fonksiyon
   2- C#  işlem yapan Herşey Metot içersinde yazılmalıdır
   3- Metotlar  Nesne(class) lar içinde yazılması zorunludur.
+  4- return Ettikten Sonraki Metot Kodları Çalışmaz
 
  işlem nedir ? => bilgisayar verdiğimiz emirler
 
@@ -63,6 +64,16 @@ geri dönüş değeri => çıktı  bool
 
 
 
+
+
+
+
+
+
+
+
+
+
 //double sayi = Alayli.AussuB(2);
 
 Console.WriteLine("Lütfen Bir Sayı Giriniz.");
@@ -76,14 +87,11 @@ Console.WriteLine(Sonuc);
 
 public static class Alayli
 {
-
-
     public static bool Ciftmi(int sayi)
     {
         bool Sonuc = sayi %2 ==0;// true yada false
         return Sonuc;
     }
-
 
     // Karesini Hesaplayan Bir Metot yazcaz
     public static int Karesi(int Sayi)
@@ -93,8 +101,14 @@ public static class Alayli
         return Sonuc;
     }
 
+    public static int BuyukSayi(int sayi1,int sayi2)
+    {
+        if (sayi1 > sayi2)
+            return sayi1;
+        else
+            return sayi2;
+    }
 
+  
 
 }
-
-
