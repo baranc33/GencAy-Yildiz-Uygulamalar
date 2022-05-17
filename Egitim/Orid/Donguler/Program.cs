@@ -1,10 +1,13 @@
 ﻿/*
   Döngüler 
+
 1- While
 2- Do While
 3- For
 4- Foreach => döngü değil itere etmektir fakat döngü gibi davranır
 5- Go to x => döngü değildir.
+
+6 - break continue;
 
  */
 
@@ -29,41 +32,27 @@ goto x;   => gidicek noktası
 /* Toplama işlemi yapcaz
 2 tane tam sayı
 */
+// kullanıcıdan veri girmesini istiyorsun
+// istediğin veri int değilse tekrar girsin
+// int ise sayıyı ekrana yazsın ve program bitsin
+
+/*Kopya
+ string Ssayi1 = Console.ReadLine();
+bool Sonuc1 = int.TryParse(Ssayi1, out sayi); // false ise sayı değildir
+ */
+
+
+
 int sayi1;
-int sayi2;
-x:
-Console.WriteLine("Lütfen 1. Sayıyı Giriniz");
-string Ssayi1 = Console.ReadLine();
-bool Sonuc1 = int.TryParse(Ssayi1, out sayi1);
+string sayi2 = "";
+bool Sonuc = false;
 
-if(Sonuc1 ==false)
+
+while (Sonuc==false)
 {
-    Console.Clear();
-    Console.WriteLine("Kardeşim Sayı Değeri Girsene");
-    Thread.Sleep(4000);
-    Console.Clear();
-    goto x;
-}
-y:
-Console.WriteLine("Lütfen 2. Sayıyı Giriniz");
-string Ssayi2 = Console.ReadLine();
-bool Sonuc2 = int.TryParse(Ssayi2, out sayi2);
-
-if (Sonuc2==false)
-{
-    Console.Clear();
-    Console.WriteLine("Kardeşim Sayı Değeri Girsene");
-    Thread.Sleep(4000);
-    Console.Clear();
-
-    goto y;
+    Console.WriteLine("lütfen bir sayı giriniz");
+    sayi2 = Console.ReadLine();
+    Sonuc = int.TryParse(sayi2, out sayi1);
 }
 
-int Toplam = sayi1+sayi2;
-string Cevap=sayi1 + " + " + sayi2 + " = " + Toplam;
-Console.WriteLine(Cevap);
-
-
-
-
-
+Console.WriteLine(sayi2);
