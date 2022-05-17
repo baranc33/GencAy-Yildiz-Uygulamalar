@@ -36,6 +36,9 @@ Console.WriteLine("Cod Sonu");
 
 
 
+int x = 2;
+
+Console.WriteLine(x++);
 
 
 /*
