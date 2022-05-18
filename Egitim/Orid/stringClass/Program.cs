@@ -185,7 +185,7 @@ Console.WriteLine(yeniAd);
 
 
 
-Remove
+Remove => insert ile aynı mantık
 	Metin içinde index  verilerek değerler silinir
 Metin.remove(5);  5 ten sonrasını sil
 Metin.remove(5,2); 5 ten sonra 2 tane sil
@@ -203,15 +203,22 @@ string cumle = "yunus can hakan baran çakır";
 //string cumleparcasi = cumle.Substring(6);// bu  6. sıradan sonrasını komple al
 //string cumleparcasi = cumle.Substring(6,3);// bu 6 . sırdan 3 tanesini al
 Console.WriteLine(cumleparcasi);
+
+
+ÖNEMLİ ÖRNEK 
+
+// bir kadın ve bir adam evlendi kadının soyadını adamınki ile değiştircez
+Console.WriteLine("Kocanın Ad ve soyadı");
+string adam= Console.ReadLine();
+Console.WriteLine("Eşinin Adı ve soyadı");
+string kadın = Console.ReadLine();
+// döngü kullanmak için kişilerin sadece 1 adı olduğunu farz ediyoruz
+int adamSoyadSira = adam.IndexOf(" ");
+string adamSoyad = adam.Substring(adamSoyadSira+1);
+int kadinAdSira = kadın.IndexOf(" ");
+//string kadinAd = kadın.Remove(kadinAdSira);// bu yöntemlede alabilirz
+string kadinAd = kadın.Substring(0, kadinAdSira);
+string kadinYeniAdveSoyad = $"{kadinAd} {adamSoyad}";
+
+Console.WriteLine($"Kadının Yeni adı = {kadinYeniAdveSoyad}");
 */
-
-// yunus ayşe ile evlendi ayşenin soyadı yılmazdı 
-// ayşe artık soyadını kullanmicak yunusun soy adını alacak
-
-string erkek = "Yunus Can";
-string kadın = "Ayşe Yılmaz";
-
-
-
-
-// isimlerin ne olduğunu bilmediğimizde nasıl yaparız ?
