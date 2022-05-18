@@ -105,3 +105,113 @@ bazı işlemleri yapmamıza yarar
 
 //Console.WriteLine(cumle);
  */
+
+/* Bazı STRİNG metotları
+ 
+Contains
+Bir metin içersinde verilen değeri aramaya yarar
+Bool a = Metin.Contains(keyword); 
+örnek : girilen mailin mail formatında olup olmadığını kontrol edelim
+string mail = "baranc33@gmail.com";
+bool sonuc = mail.Contains("@") && mail.Contains(".com");
+Console.WriteLine(sonuc);
+
+
+Startswith
+Metinin Başlangıç değerini kontrol eder
+containsin aynısı ama başı kontrol eder
+
+
+Endswith
+Metinin sonunu kontrol eder
+containsin aynısı ama sonu kontrol eder
+
+
+
+Equals
+Metin ifadesiyle başka bir değerin bire bir eşit olup olmamasını kontrol eder
+Bool a= metin.equals(metin2);
+string ad = "hakan";
+string ad2 = "yunus";
+
+bool sonuc = ad==ad2; // bu kullanımın aynısı equal
+bool sonuc2 = ad.Equals(ad2);
+Console.WriteLine(sonuc2);
+
+
+Comparre
+Metinsel alfa numerik olarak karşılaştırma yapar
+String.compare(metin,metin2);
+Geriye int döner  
+0 = eşit
+1= soldaki büyük
+-1= sağdaki büyük
+Aşırı yükleyip belli karakterleride karşılaştırabiliriz
+String.Compare(metin,index,metin2,index, kaç adat karakter karşılaştırılcak)
+
+
+string ad = "mersin";
+string ad2 = "adana";
+int sonuc = string.Compare(ad,ad2);
+
+Console.WriteLine(sonuc);
+
+
+
+Compareto
+Compare ile aynı görevi görüyor sadece kullanımı farklı
+Metin.compareTo(metin2);
+Seklinde görev yapıyor
+
+
+
+Indexof
+Verilen değerin eşleşen index numarasını verir
+Metin.IndexOf(“x”);
+
+string mail= Console.ReadLine();
+int a = mail.IndexOf("@");
+string mailUzantısı = mail.Substring(a+1);
+Console.WriteLine(mailUzantısı);
+
+İnsert
+Stringe değer eklememizi sağlar
+Metin.insert(başlkangıç index, eklenecek keyword);
+Geriye string döner var olan metini değiştirmez.
+
+string ad = "Hakan Çakır";
+string yeniAd = ad.Insert(6, " Baran ");
+Console.WriteLine(yeniAd);
+
+
+
+Remove
+	Metin içinde index  verilerek değerler silinir
+Metin.remove(5);  5 ten sonrasını sil
+Metin.remove(5,2); 5 ten sonra 2 tane sil
+
+
+
+Substring
+Split gibi metni parçalama splitten farklı olarak indexlerden işlem yapar
+   string metin2 = metin.Substring(başlangıç index);
+    string metin2 = metin.Substring(başlangıç index, kaç karakter);
+
+
+string cumle = "yunus can hakan baran çakır";
+
+//string cumleparcasi = cumle.Substring(6);// bu  6. sıradan sonrasını komple al
+//string cumleparcasi = cumle.Substring(6,3);// bu 6 . sırdan 3 tanesini al
+Console.WriteLine(cumleparcasi);
+*/
+
+// yunus ayşe ile evlendi ayşenin soyadı yılmazdı 
+// ayşe artık soyadını kullanmicak yunusun soy adını alacak
+
+string erkek = "Yunus Can";
+string kadın = "Ayşe Yılmaz";
+
+
+
+
+// isimlerin ne olduğunu bilmediğimizde nasıl yaparız ?

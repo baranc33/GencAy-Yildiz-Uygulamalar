@@ -78,13 +78,17 @@ geri dönüş değeri => çıktı  bool
 
 Console.WriteLine("Lütfen Bir Sayı Giriniz.");
 int sayi = Convert.ToInt32(Console.ReadLine());
-
 int Sonuc = Alayli.Karesi(sayi);
+
 
 Console.WriteLine(Sonuc);
 
 
 
+
+
+
+// yazım
 public static class Alayli
 {
     public static bool Ciftmi(int sayi)
