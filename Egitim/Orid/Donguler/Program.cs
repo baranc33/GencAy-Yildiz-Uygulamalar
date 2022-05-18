@@ -42,17 +42,10 @@ bool Sonuc1 = int.TryParse(Ssayi1, out sayi); // false ise sayı değildir
  */
 
 
+int i = 0;
 
-int sayi1;
-string sayi2 = "";
-bool Sonuc = false;
-
-
-while (Sonuc==false)
+while (i< 20)
 {
-    Console.WriteLine("lütfen bir sayı giriniz");
-    sayi2 = Console.ReadLine();
-    Sonuc = int.TryParse(sayi2, out sayi1);
+    i++;
+    Console.WriteLine(i);
 }
-
-Console.WriteLine(sayi2);
