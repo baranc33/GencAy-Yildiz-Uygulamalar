@@ -27,7 +27,7 @@ Notlar
 
 /*
  Metot oluşturma sırası
-1- Erişim Belirteci => Metoda nerden erişilebileceğini belirler // public
+1- Erişim Belirteci => Metoda nereden erişilebileceğini belirler // public
 2- Metotdun Tipi => Statik Veya Dynamic                 // dynamic
 3- Geri Dönüş Değeri => Metot Geriye Ne dönecek
 (değişkenler ör:int,string,bool)

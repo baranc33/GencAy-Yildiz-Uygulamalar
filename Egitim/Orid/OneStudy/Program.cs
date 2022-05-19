@@ -1,5 +1,4 @@
 ﻿// Burası Yorum Satırı 
-
 /*
  Burasıda 
 Yorum Satırıdır
@@ -38,11 +37,6 @@ Back End => Arka planda Kullanıcının Görmediği Verisel işlemler
     int Sayi1 = 5;
     int Sayi2 = 3;
     int Sayi3 = Sayi1+Sayi2;
-
-
-// şafak =5 
-// ibrahim =5
-// yunus =6 
 
 
 
