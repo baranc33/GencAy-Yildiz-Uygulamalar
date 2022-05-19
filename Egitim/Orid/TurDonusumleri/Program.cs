@@ -50,7 +50,9 @@ Console.WriteLine(cevapsayi);
 /*
  Convert.To.....(Dönüşecek)
  ....Parshe(Dönüşecek)
- 
- 
+ ... .TryParshe(dönüşecek, out aktarılacakDeğişken)
+
+ int a;
+int.tryparshe(dönüşek, out a)
  */
 

@@ -7,7 +7,7 @@
 4- Foreach => döngü değil itere etmektir fakat döngü gibi davranır
 5- Go to x => döngü değildir.
 
-6 - break continue;
+ek kullanılabilirk = break ,continue;
 
  */
 
@@ -20,12 +20,13 @@ x:       => başlangıç noktası
 goto x;   => gidicek noktası
  */
 
+Console.WriteLine("Lütfen bir sayı giriniz");
+string Deger = Console.ReadLine();
+int sayi;
+//kardeşim degeri intager çevir sonra çıkan sonucu sayi değişkinine aktar
+bool Sonuc = int.TryParse(Deger, out sayi); // bool değer dönüşüp dönüşmediği ifade eder
 
-// ///  1. parametere çevrilecek değer
-// ///  2. paramtere değeri hangi değişkene atacağımız
-// ///  2. parametrenin önüne out keyword ü gelecek
-//int sayi2 = 5;
-//string sayi = Console.ReadLine();
+Console.WriteLine(Sonuc);
 //bool a= int.TryParse(sayi, out sayi2);
 //Console.WriteLine(sayi2);
 
@@ -42,10 +43,10 @@ bool Sonuc1 = int.TryParse(Ssayi1, out sayi); // false ise sayı değildir
  */
 
 
-int i = 0;
+//int i = 0;
 
-while (i< 20)
-{
-    i++;
-    Console.WriteLine(i);
-}
+//while (i< 20)
+//{
+//    i++;
+//    Console.WriteLine(i);
+//}
