@@ -19,34 +19,194 @@ başlangıcı ve bitişi vardır
 x:       => başlangıç noktası 
 goto x;   => gidicek noktası
  */
+// kullanıcada 2 sayı gerekiyor
+// hangi işlem 
+// sonuc
+int sayi1, sayi2;
+string islem;// * => çarpma   / => bölme   + => toplama   - => çıkarma
+int sonuc = 0;
+x:
+Console.WriteLine("Lütfen 1. sayıyı giriniz");
+string girdi1 = Console.ReadLine();
+bool result1 = int.TryParse(girdi1, out sayi1);
 
-Console.WriteLine("Lütfen bir sayı giriniz");
-string Deger = Console.ReadLine();
-int sayi;
-//kardeşim degeri intager çevir sonra çıkan sonucu sayi değişkinine aktar
-bool Sonuc = int.TryParse(Deger, out sayi); // bool değer dönüşüp dönüşmediği ifade eder
+if (result1==false)
+{
+    Console.Clear();// consolu temizliyor
+    Console.WriteLine("Hatalı Bir Giriş Yaptınız Lütfen Tekrar Deneyiniz !!!");
+    Thread.Sleep(3000);// mili saniye cinsinden kodu beklet 
+    Console.Clear();
+    goto x;
+}
 
-Console.WriteLine(Sonuc);
-//bool a= int.TryParse(sayi, out sayi2);
-//Console.WriteLine(sayi2);
+Console.Clear();
+Console.WriteLine("1. Sayının Değeri = "+ sayi1);
 
-/* Toplama işlemi yapcaz
-2 tane tam sayı
-*/
-// kullanıcıdan veri girmesini istiyorsun
-// istediğin veri int değilse tekrar girsin
-// int ise sayıyı ekrana yazsın ve program bitsin
+y:
+Console.WriteLine("Lütfen 2. sayıyı giriniz");
+string girdi2 = Console.ReadLine();
+Console.Clear();
+Console.WriteLine("1. Sayının Değeri = "+ sayi1+ "\n2. sayının değeri = " + girdi2);
+bool result2 = int.TryParse(girdi2, out sayi2);
 
-/*Kopya
- string Ssayi1 = Console.ReadLine();
-bool Sonuc1 = int.TryParse(Ssayi1, out sayi); // false ise sayı değildir
- */
+if (result2==false)
+{
+    Console.Clear();
+    Console.WriteLine("Hatalı giriş yaptınız Lütfen Tekrar Deneyiniz!!!");
+    Thread.Sleep(3000);// mili saniye cinsinden kodu beklet 
+    Console.Clear();
+    goto y;
+}
+z:
+Console.WriteLine("Toplama için ( + ) tıklayınız.");
+Console.WriteLine("Çıkarma için ( - ) tıklayınız.");
+Console.WriteLine("Çarpma için ( * ) tıklayınız.");
+Console.WriteLine("Bölme için ( / ) tıklayınız.");
+Console.WriteLine("Kalan için ( % ) tıklayınız.");
+
+islem = Console.ReadLine();
+
+bool Dogrumu = Alayli.islemDogrumu(islem);
+
+if (Dogrumu==false)
+{
+    Console.Clear();
+    Console.WriteLine("İşlemini doğru seçiniz bay yavşak!");
+    Thread.Sleep(1500);
+    goto z;
+}
+
+string cümle = Alayli.Hesaplama(sayi1, sayi2, islem);
+
+Console.WriteLine(cümle);
 
 
-//int i = 0;
 
-//while (i< 20)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//if (islem=="+")
 //{
-//    i++;
-//    Console.WriteLine(i);
+//    sonuc =sayi1+sayi2;
 //}
+//else if (islem=="-")
+//{
+//    sonuc =sayi1-sayi2;
+//}
+//else if (islem=="/")
+//{
+//    sonuc =sayi1/sayi2;
+//}
+//else if (islem=="*")
+//{
+//    sonuc =sayi1*sayi2;
+//}
+//else
+//{
+//    Console.Clear();
+//    Console.WriteLine("İşlemini doğru seçiniz bay yavşak!");
+//    Thread.Sleep(1500);
+//    goto z;
+//}
+//Console.Clear();
+//Console.WriteLine(sayi1 +"  "+islem+" "+sayi2 +" = "+sonuc.ToString());
+
+
+// toplu yorum ctrl+k , ctrl+ c
+// kaldırması  ctrl+k  , ctrl + u
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// false bir metot=> yunus
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//if (islem== "+")
+//{
+//    int cevap = sayi1+sayi2;
+//    Console.WriteLine("İşleminizin Sonucu" + cevap);
+//}
+//else if (islem== "-")
+//{
+//    int cevap2 = sayi1-sayi2;
+//    Console.WriteLine("İşleminizin Sonucu" + cevap2);
+//}
+//else if (islem== "/")
+//{
+//    int cevap3 = sayi1/sayi2;
+//    Console.WriteLine("İşleminizin Sonucu" + cevap3);
+//}
+//else if (islem== "*")
+//{
+//    int cevap3 = sayi1*sayi2;
+//    Console.WriteLine("İşleminizin Sonucu" + cevap3);
+//}
+//else
+//{
+//    Console.Clear();
+//    Console.WriteLine("İşlemini doğru seçiniz bay yavşak!");
+//    Thread.Sleep(1500);
+//    goto z;
+//}
+
+
+

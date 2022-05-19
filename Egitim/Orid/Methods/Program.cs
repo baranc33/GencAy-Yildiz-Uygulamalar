@@ -6,6 +6,11 @@
 
  işlem nedir ? => bilgisayar verdiğimiz emirler
 
+Metotlar bir parametre  alır veya almaz,
+sonra içinde işlem yapar
+geriye bir değer döner yada dönmez;
+
+
 
 Notlar 
 1- metot içinde metot
@@ -76,12 +81,18 @@ geri dönüş değeri => çıktı  bool
 
 //double sayi = Alayli.AussuB(2);
 
-Console.WriteLine("Lütfen Bir Sayı Giriniz.");
-int sayi = Convert.ToInt32(Console.ReadLine());
-int Sonuc = Alayli.Karesi(sayi);
+//Console.WriteLine("Lütfen Bir Sayı Giriniz.");
+//int sayi = Convert.ToInt32(Console.ReadLine());
+//int Sonuc = Alayli.Karesi(sayi);
+
+int sayi1 = 4;
+int sayi2;
+
+Alayli.KaresiOut(sayi1, out sayi2);
 
 
-Console.WriteLine(Sonuc);
+
+Console.WriteLine(sayi2);
 
 
 
@@ -97,6 +108,29 @@ public static class Alayli
         return Sonuc;
     }
 
+    public static bool islemDogrumu(string islem)
+    {
+        if (islem == "+" || islem=="-" || islem=="/" || islem=="*"|| islem=="%")
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    public static string Hesaplama(int sayi1, int sayi2, string islem)
+    {
+        int sonuc;
+        if (islem=="+")      sonuc =sayi1+sayi2;
+        else if (islem=="-") sonuc =sayi1-sayi2;
+        else if (islem=="/") sonuc =sayi1/sayi2;
+        else                 sonuc =sayi1*sayi2;
+
+        return $"{sayi1} {islem} {sayi2} = {sonuc}";
+    }
+
+
     // Karesini Hesaplayan Bir Metot yazcaz
     public static int Karesi(int Sayi)
     {
@@ -104,8 +138,13 @@ public static class Alayli
         Sonuc = Sayi* Sayi;
         return Sonuc;
     }
+    // 5   önemi yok
+    public static void KaresiOut(int Sayi, out int sayi2)
+    {
+        sayi2 = Sayi * Sayi;
+    }
 
-    public static int BuyukSayi(int sayi1,int sayi2)
+    public static int BuyukSayi(int sayi1, int sayi2)
     {
         if (sayi1 > sayi2)
             return sayi1;
@@ -113,6 +152,6 @@ public static class Alayli
             return sayi2;
     }
 
-  
+
 
 }
